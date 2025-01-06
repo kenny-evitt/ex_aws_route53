@@ -67,7 +67,7 @@ defmodule ExAws.Route53 do
     request(:delete, :delete_hosted_zone, path: "/#{id}")
   end
 
-  @type record_action :: [:create | :delete | :upsert]
+  @type record_action :: :create | :delete | :upsert
   @type alias_target :: [
     {:id, binary},
     {:name, binary},
